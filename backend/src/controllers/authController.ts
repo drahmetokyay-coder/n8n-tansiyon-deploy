@@ -32,10 +32,10 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     await user.save();
 
     // Generate token
-    const token = generateToken(user._id.toString());
+    const token = generateToken((user as any)._id.toString());
 
     // Return user data without password
-    const userResponse = user.toObject();
+    const userResponse: any = user.toObject();
     delete userResponse.password;
 
     res.status(201).json({
@@ -74,10 +74,10 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     }
 
     // Generate token
-    const token = generateToken(user._id.toString());
+    const token = generateToken((user as any)._id.toString());
 
     // Return user data without password
-    const userResponse = user.toObject();
+    const userResponse: any = user.toObject();
     delete userResponse.password;
 
     res.json({
