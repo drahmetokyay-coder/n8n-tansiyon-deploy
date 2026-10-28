@@ -1,0 +1,23 @@
+{
+  "name": "jobswipe-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JobSwipe tanıtım videoları (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render JobSwipePromo out/jobswipe-promo.mp4",
+    "still": "remotion still JobSwipePromo out/thumbnail.png --frame=60",
+    "upgrade": "remotion upgrade",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

@@ -66,8 +66,11 @@ Tinder benzeri swipe mekanizmasıyla part-time iş arayanlar ve iş verenler iç
 │   │   └── utils/         # Yardımcı fonksiyonlar
 │   └── tests/             # Unit & integration tests
 │
-└── shared/                # Ortak tipler ve sabitler
-    └── types/             # TypeScript type definitions
+├── shared/                # Ortak tipler ve sabitler
+│   └── types/             # TypeScript type definitions
+│
+└── video/                 # Remotion ile tanıtım videoları
+    └── src/               # Kompozisyonlar (JobSwipePromo)
 ```
 
 ## Kurulum
@@ -90,6 +93,15 @@ npx react-native start
 npx react-native run-ios
 # veya
 npx react-native run-android
+```
+
+### Video (Remotion)
+```bash
+cd video
+npm install
+npm run dev      # Remotion Studio (tarayıcıda önizleme)
+npm run build    # out/jobswipe-promo.mp4 (1080x1920, 6 sn)
+npm run still    # out/thumbnail.png
 ```
 
 ## Geliştirme Roadmap
