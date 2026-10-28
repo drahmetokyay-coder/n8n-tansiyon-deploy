@@ -7,11 +7,17 @@
     "dev": "remotion studio",
     "build": "remotion render JobSwipePromo out/jobswipe-promo.mp4",
     "still": "remotion still JobSwipePromo out/thumbnail.png --frame=60",
+    "build:29ekim": "remotion render CumhuriyetStory out/29-ekim-story.mp4",
+    "still:29ekim": "remotion still CumhuriyetStory out/29-ekim-kapak.png --frame=599",
+    "music:29ekim": "python3 scripts/generate-march.py",
     "upgrade": "remotion upgrade",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/montserrat": "5.3.0",
+    "@fontsource/playfair-display": "5.3.0",
     "@remotion/cli": "4.0.539",
+    "@remotion/motion-blur": "4.0.539",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.539"

@@ -102,7 +102,16 @@ npm install
 npm run dev      # Remotion Studio (tarayıcıda önizleme)
 npm run build    # out/jobswipe-promo.mp4 (1080x1920, 6 sn)
 npm run still    # out/thumbnail.png
+
+# 29 Ekim Cumhuriyet Bayramı story'si (1080x1920, 20 sn, müzikli)
+npm run build:29ekim   # out/29-ekim-story.mp4
+npm run still:29ekim   # out/29-ekim-kapak.png
+npm run music:29ekim   # özgün marşı yeniden üretir (python3 + numpy)
 ```
+
+`CumhuriyetStory` müziği (`public/cumhuriyet-marsi.wav`) `scripts/generate-march.py` ile
+tamamen sentezlenmiş özgün bir marştır; telif sorunu yoktur. Lisanslı başka bir parça
+kullanmak için dosyayı aynı adla değiştirmeniz yeterli (120 BPM'de 20 sn ise geçişler vuruşa oturur).
 
 ## Geliştirme Roadmap
 
